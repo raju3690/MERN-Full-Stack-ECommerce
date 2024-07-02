@@ -1,5 +1,5 @@
 import React from 'react'
-import FAILUREIMAGE from '../assets/cancel.gif'
+import FAILUREIMAGE from '../assest/cancel.gif'
 import { Link } from 'react-router-dom'
 
 

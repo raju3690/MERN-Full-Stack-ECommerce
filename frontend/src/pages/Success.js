@@ -1,5 +1,5 @@
 import React from 'react'
-import SUCCESSIMAGE from '../assets/new.gif'
+import SUCCESSIMAGE from '../assest/new.gif'
 import { Link } from 'react-router-dom'
 
 const Success = () => {
