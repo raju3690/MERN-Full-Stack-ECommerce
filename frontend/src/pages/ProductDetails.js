@@ -212,6 +212,7 @@ const ProductDetails = () => {
                   <p className='text-slate-600 font-medium my-1'>Description : </p>
                   <p>{data?.description}</p>
                 </div>
+
               </div>
             )
            }

@@ -25,6 +25,7 @@ const filterProductController = require('../controller/product/filterProduct')
 const paymentController = require('../controller/order/paymentController')
 const webhooks = require('../controller/order/webhook')
 const orderController = require('../controller/order/order.controller')
+const allOrderController = require('../controller/user/allOrder.controller')
 
 
 
@@ -59,6 +60,6 @@ router.post('/checkout', authToken, paymentController)
 router.post('/webhook', webhooks) //endpoint: api/webhooks for stripe
 
 router.get("/order-list",authToken, orderController)
-
+router.get("/all-order",authToken, allOrderController)
 
 module.exports = router
