@@ -43,7 +43,7 @@ const AllProducts = () => {
 
 
 
-        {/**upload prouct component */}
+        {/**upload product component */}
         {
           openUploadProduct && (
             <UploadProduct onClose={()=>setOpenUploadProduct(false)} fetchData={fetchAllProduct}/>

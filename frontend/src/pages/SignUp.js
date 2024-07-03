@@ -77,7 +77,7 @@ const SignUp = () => {
 
   return (
     <section id='signup'>
-        <div className='mx-auto container p-4'>
+        <div className='mx-auto container p-4 mt-5'>
 
             <div className='bg-white p-5 w-full max-w-sm mx-auto'>
 

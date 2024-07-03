@@ -25,11 +25,14 @@ const OrderPage = () => {
 
   return (
     <div>
-      {
-        !data[0] && (
-          <p>No Orders available</p>
-        )
-      }
+      <div className='mt-8'>
+        {
+          !data[0] && (
+            <p>No Orders available</p>
+          )
+        }
+      </div>
+
       <div className='p-4 w-full'>
         {
           data.map((item,index)=>{

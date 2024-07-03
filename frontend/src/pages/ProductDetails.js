@@ -95,7 +95,7 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className='container mx-auto p-4'>
+    <div className='container mx-auto p-4 mt-6'>
 
       <div className='min-h-[200px] flex flex-col lg:flex-row gap-4'>
           {/***product Image */}
@@ -208,18 +208,33 @@ const ProductDetails = () => {
                   <button className='border-2 border-red-600 rounded px-3 py-1 min-w-[120px] font-medium text-white bg-red-600 hover:text-red-600 hover:bg-white' onClick={(e)=>handleAddToCart(e,data?._id)}>Add To Cart</button>
                 </div>
 
-                <div>
+                {/* <div>
                   <p className='text-slate-600 font-medium my-1'>Description : </p>
                   <p>{data?.description}</p>
+                </div> */}
+
+                <div className='border border-gray-300 rounded p-2 mb-5'>
+                  <p className='text-gray-800 font-bold my-1'>Description :</p>
+                  {data?.description && (
+                    <div className='pl-4'>
+                      {data.description.split('\n').map((line, index) => (
+                        <p key={index} className='mb-2'>
+                          {line.startsWith('Highlights') ? (
+                            <strong className='-ml-4 text-gray-800'>{line}</strong>
+                          ) : (
+                            line
+                          )}
+                        </p>
+                      ))}
+                    </div>
+                  )}
                 </div>
+
 
               </div>
             )
            }
-
       </div>
-
-
 
       {
         data.category && (
