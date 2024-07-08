@@ -39,10 +39,6 @@ const AllProducts = () => {
           }
         </div>
 
-
-
-
-
         {/**upload product component */}
         {
           openUploadProduct && (
